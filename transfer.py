@@ -78,7 +78,7 @@ def main():
         # up
         upd   = toc.format(k2 = args.pegasus_key,
                            d  = tmp,
-                           p2 = args.colonial_pegasus).split()
+                           p2 = args.pegasus_path).split()
         subprocess.Popen(upd).communicate()
         sys.stdout.write( "Down, Up: %s" % tmp)
         shutil.rmtree(tmp)
