@@ -14,7 +14,7 @@ python setup.py install
 
 ## Overview
 
-Firstly, make sure you can access to your clusters by using key files. This a pivotal point of the script due to iterations can be performed without manual control. You can learn how to do so [**here**](setPassworlessAccess.md).
+Firstly, make sure you can access to your clusters by using key files. This a pivotal point of the script due to iterations can be performed without manual control. You can learn how to do so [**here**](setPasswordlessAccess.md).
 
 
 
