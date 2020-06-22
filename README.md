@@ -1,5 +1,7 @@
 # globus.py
 
+Transfer targeted directories (and targeted files inside them) between clusters
+
 ## Requirements
 * python3
 * git (to clone this repo) 
