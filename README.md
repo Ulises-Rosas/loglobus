@@ -10,7 +10,7 @@ Transfer targeted directories (and targeted files inside them) between clusters
 ## Installation
 
 ```bash
-git clone && cd globus.py
+git clone https://github.com/Ulises-Rosas/globus.py.git && cd globus.py
 python setup.py install
 ```
 
