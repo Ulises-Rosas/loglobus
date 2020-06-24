@@ -1,4 +1,4 @@
-# globus.py
+# loglobus
 
 Transfer targeted directories (and targeted files inside them) between clusters
 
