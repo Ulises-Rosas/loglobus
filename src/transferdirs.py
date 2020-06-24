@@ -5,15 +5,13 @@ import argparse
 from transfer._coredir import *
 
 # handy default files
-# COLONIAL_PATH = '/lustre/groups/ortilab/bb1/target'
-# PEGASUS_PATH  = '/lustre/groups/ortilab/protacanthopterygii/target'
 
 def getOpts():
     
     parser = argparse.ArgumentParser( 
         formatter_class = argparse.RawDescriptionHelpFormatter, 
         description = '''
-                        Transfer of directories between clusters
+                        Transfer directories between clusters
                         ''')
     parser.add_argument('-f', '--file',
                         metavar  = "",
@@ -25,11 +23,11 @@ def getOpts():
                         type     = str,
                         required = True,
                         help     = '[Required] File with transfer parameters')    
-    parser.add_argument('-g', '--globals',
+    parser.add_argument('-g', '--glob',
                         metavar  = "",
                         type     = str,
                         default  = None,
-                        help     = '[Optional] File with globals patterns [Default = None]')
+                        help     = '[Optional] File with glob patterns [Default = None]')
     return parser.parse_args()
 
 def main():
@@ -37,7 +35,7 @@ def main():
     
     frc, toc  = str_gather(args.params)
     dirs      = open(args.file   , "r").readlines()
-    glob_patt = open(args.globals, "r").readlines() if args.globals else None
+    glob_patt = open(args.glob, "r").readlines() if args.glob else None
 
     rest_out  = "rest_" + args.file
     done      = []
