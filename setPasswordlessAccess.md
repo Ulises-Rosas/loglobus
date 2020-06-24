@@ -32,5 +32,5 @@ ssh-copy-id -i mykey [userid]@[host]
 ssh -i mykey [userid]@[host]
 ```
 
-[**Source**](https://askubuntu.com/questions/46930/how-can-i-set-up-password-less-ssh-login)
+Source: [**askubuntu.com**](https://askubuntu.com/questions/46930/how-can-i-set-up-password-less-ssh-login)
 
