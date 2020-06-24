@@ -40,4 +40,4 @@ Once key files were created, these can be introduced into a [file](params_dir.tx
 transferdirs -f [file with target directory names] -p [file with parameters]
 ```
 
-[Glob patterns](globs.txt) can also be used to take specific files from each source directory by using the option `-g` (see `transferdirs -h` for more information).
+[Glob patterns](globs.txt) can also be used to take specific files from each target directory by using the option `-g` (see `transferdirs -h` for more information).
