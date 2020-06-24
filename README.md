@@ -16,12 +16,9 @@ pip install loglobus
 
 Firstly, make sure you can access to your clusters by using key files. This a pivotal point of the script due to iterations can be performed without manual control. You can learn how to do so [**here**](setPasswordlessAccess.md).
 
-Once key files are created, these can be introduced at the `params_dirs.txt` file, as well as other paramenters (e.g. `userid`, `host`, `path`):
+Once key files were created, these can be introduced into a [file](params_dir.txt) with other transfer parameters (e.g. `userid`, `host`, `path`). This file should look like this (i.e. json format):
 
-```bash
-cat params_dir.txt
 ```
-```bash
 {
     "from": {
         "userid": "userid",
@@ -37,11 +34,10 @@ cat params_dir.txt
     }
 }
 ```
-
-Finally, this file can be plugged into the main script (i.e. `transferdir`), as well as the file with the list of source directories names:
+`path` parameter indicates the directory where target directories are located. Finally, this file with parameters can be plugged into the main script (i.e. `transferdir`), as well as the file with the list of target directories names:
 
 ```bash
-transferdirs -f [file with directory names] -p params_dir.txt
+transferdirs -f [file with target directory names] -p [file with parameters]
 ```
 
 [Glob patterns](globs.txt) can also be used to take specific files from each source directory by using the option `-g` (see `transferdirs -h` for more information).
