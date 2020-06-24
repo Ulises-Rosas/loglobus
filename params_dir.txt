@@ -1,0 +1,14 @@
+{
+    "from": {
+        "userid": "userid",
+        "host": "login.colonialone.gwu.edu",
+        "path": "source_path",
+        "key": "key_file_path"
+    },
+    "to": {
+        "userid": "userid",
+        "host": "pegasus.colonialone.gwu.edu",
+        "path": "destination_path",
+        "key": "key_file_path"
+    }
+}
