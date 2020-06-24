@@ -37,7 +37,7 @@ Once key files were created, these can be introduced into a [file](params_dir.tx
 `path` parameter indicates the directory where target directories are located. Finally, this file with parameters can be plugged into the main script (i.e. `transferdir`), as well as the file with the list of target directories names:
 
 ```bash
-transferdirs -f [file with target directory names] -p [file with parameters]
+transferdirs -f [directories] -p [parameters]
 ```
 
 [Glob patterns](globs.txt) can also be used to take specific files from each target directory by using the option `-g` (see `transferdirs -h` for more information).
