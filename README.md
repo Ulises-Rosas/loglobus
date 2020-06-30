@@ -41,7 +41,8 @@ Once key files were created, these can be introduced into a [file](params_dir.tx
     }
 }
 ```
-`path` parameter indicates the directory where target directories are located. Finally, this file with parameters can be plugged into the main script (i.e. `transferdir`), as well as the file with the list of target directories names:
+
+The first `path` parameter (i.e. within "from" values) indicates the directory where target directories are located. The second one (i.e. within "to" values), indicates the destination directory where target directories will be located. Finally, this json file with parameters is plugged into the main script (i.e. `transferdir`), as well as the file with the list of target directories names:
 
 ```bash
 transferdirs -f [file with directory names] -p [file with parameters]
